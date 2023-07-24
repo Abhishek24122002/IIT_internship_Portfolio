@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:800");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.slider {
+  margin:0px auto;
+  background: rgba(0, 0, 0, 0.16);
+  padding: 30px;
+  z-index: 3;
+  /* max-width: 940px; */
+}
+
+.slide_viewer {
+  height: 530px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slider p{
+  position: absolute;
+  margin: auto 0px;
+  padding: 210px;
+  padding-top: 450px;
+  font-size: 30px;
+  font-family: 'Poppins';
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 15px rgba(55, 55, 55, 0.807);
+  z-index: 3;
+}
+
+.slider a{
+  color: rgb(255, 254, 254);
+}
+
+.slide img{
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.607);
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) img{
+  display: block;
+  margin: 0 auto;
+}
+
+.slide:nth-of-type(2) img{
+  display: block;
+  margin: 0 auto;
+}
+
+.slide:nth-of-type(3) img{
+  display: block;
+  margin: 0 auto;
+}
+
+.slide:nth-of-type(4) img{
+  display: block;
+  margin: 0 auto;
+}
+.slide:nth-of-type(5) img{
+  display: block;
+  margin: 0 auto;
+}
+.slide:nth-of-type(6) img{
+  display: block;
+  margin: 0 auto;
+}
+.slide:nth-of-type(7) img{
+  display: block;
+  margin: 0 auto;
+}
+.slide:nth-of-type(8) img{
+  display: block;
+  margin: 0 auto;
+}
+.slide:nth-of-type(9) img{
+  display: block;
+  margin: 0 auto;
+}
+.slide:nth-of-type(10) img{
+  display: block;
+  margin: 0 auto;
+}
+.slide:nth-of-type(11) img{
+  display: block;
+  margin: 0 auto;
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  /* max-width: 940px; */
+  position: relative;
+  top: -430px;
+  z-index: 5;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 80px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 80px;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
+}
+
+.lablist{    display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-family: 'Poppins';
+  padding: 0px 20px;
+  margin: 0px 0px 150px 0px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.labdiv{
+  border-top: 3px solid  rgba(25, 186, 255, 0.95);
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 50px;
+  margin: 10px;
+}
+
+.labdiv h1{
+  font-size: 30px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #0b0000, rgba(25, 186, 255, 0.95));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.labdiv p{
+  padding: 30px 0px 0px 0px;
+}
+
+
+/* students section */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.students{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 100px 0px 0px 0px;
+}
+
+.student, .student2{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  transition: ease-in-out .3s;
+  z-index: 1;
+}
+
+.student .pp ,.student2 .pp{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 200px 60px 50px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  /* border: 1mm solid rgba(135, 207, 235, 0.418); */
+  border: 1mm solid rgba(25, 186, 255, 0.95);
+  box-shadow: 20px 30px 30px -10px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  transition: ease-in-out .3s;
+  z-index: 1;
+}
+
+.student:nth-child(1) .pp{
+  background:url("../Images/Anamika\ Banerjee2.jpg");
+  background-size: cover;
+}
+.student:nth-child(2) .pp{
+  background:url("../Images/Ankit_Mishra.jpg");
+  background-size: cover;
+}
+.student:nth-child(3) .pp{
+  background:url("../Images/Farangis2.jpg");
+  background-size: cover;
+}
+
+.student:nth-child(4) .pp{
+  background:url("../Images/juilee.jpg");
+  background-size: cover;
+}
+/* .student:nth-child(6) .pp{
+  background:url("../Images/farooq_IITB.jpeg");
+  background-size: cover;
+} */
+.student:nth-child(5) .pp{
+  background:url("../Images/Karamjeet_Kaur.jpeg.jpg");
+  background-size: cover;
+}
+.student:nth-child(6) .pp{
+  background:url("../Images/Maitreyi_Redkar.jpg");
+  background-size: cover;
+}
+.student:nth-child(7) .pp{
+  background:url("../Images/Nanditha.jpg");
+  background-size: cover;
+}
+.student:nth-child(8) .pp{
+  background:url("../Images/Yengisetty_Eswar_Naveen.jpg");
+  background-size: cover;
+}
+.student:nth-child(9) .pp{
+  background:url("../Images/shaminiwarda.jpg");
+  background-size: cover;
+}
+.student:nth-child(10) .pp{
+  background:url("../Images/Vinay\ Krishna.jpg");
+  background-size: cover;
+}
+.student:nth-child(11) .pp{
+  background:url("../Images/vanita\ sharma\ jan\ 23.jpg");
+  background-size: cover;
+}
+.student:nth-child(12) .pp{
+  background:url("../Images/Karamjeet_Kaur.jpeg.jpg");
+  background-size: cover;
+}
+
+
+
+.student .studinfo{
+  position:absolute;
+  /* background: rgba(128, 128, 128, 0.16); */
+  background-color: white;
+  height: 73.5%;
+  /* width: 75%; */
+  width: 80%;
+  /* line-height: 1.8; */
+  
+  font-size: 15px;
+  transition: ease-in-out .3s;
+  font-family: 'Poppins';
+  opacity: 0;
+  padding: 5px 5px 10px 100px;
+  border-top: .5mm solid rgba(25, 186, 255, 0.95);
+  border-right: .5mm solid rgba(25, 186, 255, 0.95);
+  border-bottom: .5mm solid rgba(25, 186, 255, 0.95);
+  bottom: 60px;
+}
+.student{
+  transition-delay: .15s;
+}
+
+.student:hover .studinfo{
+  animation: showInfo 2.2s ease 1;
+  transform: translate3d(38%, 0px, 0px);
+  opacity: 1;
+}
+.link {
+  border-bottom: 1px solid transparent;
+  color: #5f6d59;
+  text-decoration: none;
+  transition: ease-in .13s;
+}
+.vidyarthi{
+  margin-bottom: 20px;
+}
+@keyframes showInfo{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+}

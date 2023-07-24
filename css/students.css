@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: sans-serif;
+  /* background: linear-gradient(120deg, #5c2fa6 13.57%, #5a36c0 98.38%); */
+  scroll-behavior: none;
+  background: url("./img/bg66.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.title {
+  /* font-size: max(2vw, 24px);
+  line-height: 1.3;
+  padding-bottom: 0.4em; */
+  /* color: white; */
+  /* text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  font-family:'Poppins', sans-serif; */
+  
+  font-size: 30px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #0b0000, rgba(25, 186, 255, 0.95));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* text-shadow: 2px 2px 4px rgba(179, 147, 211, 0.1); */
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.text {
+  font-size: max(1vw, 14px);
+  line-height:3;
+  overflow: hidden;
+  padding-bottom: 20px 25px 10px;
+  /* color: rgba(255, 255, 255, 0.7); */
+  color: #28282B;
+  font-family:'Poppins', sans-serif;
+  text-align: left;
+}
+
+.accordions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+}
+
+.accordion {
+  /* background: linear-gradient(200deg, rgba(25, 186, 255, 0.95) 10.57%, white 110.38%); */
+  background-color: #ffffffab;
+  border-top: 3px solid  rgba(25, 186, 255, 0.95);
+  /* border-top: 3px solid  hsl(180deg 62% 55%); */
+  width: max(75vw, 280px);
+  padding: 30px;
+  border-radius: 15px;
+  margin: 40px 0px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.3);
+  /* border-top: 1mm solid rgba(255, 255, 255, 0.333); */
+}
+.accordion:nth-child(2) {
+  background-color: #ffffffab;
+  border-top: 3px solid  rgba(25, 186, 255, 0.95);
+}
+.accordion:nth-child(3) {
+  background-color: #ffffffab;
+  border-top: 3px solid  rgba(25, 186, 255, 0.95);
+}
+.accordion:nth-child(4) {
+  background-color: #ffffffab;
+  border-top: 3px solid  rgba(25, 186, 255, 0.95);
+
+}
+
+.spacer {
+  height: 30px;
+}
+
+@media (max-width: 480px) {
+  .accordion {
+    padding: 15px 20px 8px;
+  }
+
+  .title {
+    font-size: 20px;
+    
+  }
+}
+
+.students1{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  margin: 100px 0px 0px 0px;
+}
+
+
+.Htitle{
+  margin-top: 100px;
+}
+
+/* Lab assitance */
+.g-container {
+  display: inline-block;;
+  align-items: center;
+}
+
+.person-card {
+  margin-left: 38%;
+  margin-right: 50%;
+  width: 300px;
+  /* padding: 10px; */
+  border-radius: 5px;
+  /* background-color: #fff; */
+  display: flex;
+  /* background: #fff; */
+  box-shadow: 1px 1px 4px 2px #eee;
+  /* margin-right: 60px; */
+}
+
+/* .info {
+  margin-left: 8px;
+} */
+
+.person-card__name {
+  margin: 20px 0 8px;
+  font-size: 25px;
+}
+
+.person-card__desc {
+  font-size: 14px;
+  line-height: 18px;
+  color: #8f8f92;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background-image: url("../Images/Ayyub.jpg");
+  background-size: cover;
+  background-position: center;
+  display: block;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.s-nowrap {
+  white-space: nowrap;
+}
+
+.s-hidden {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.s-multi {
+  width: 200px;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,216 @@
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+  /* Form By Farde */
+  .form_main{
+    /* position: relative; */
+    display: block;
+    top: 50px;
+    right: 10%;
+    /* right: 100px; */
+    width: max-content;
+    height: max-content;
+    border: 1px solid #ccc;
+    /* margin: auto; */
+    margin-top: 38px;
+    margin-left: 30px;
+    background-color: #ffffff2b;
+    padding: 30px 50px 30px 50px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 15px;
+    border-radius: 30px;
+  }
+  
+  .form_main h2{
+    text-align: center;
+    /* font-size: 2rem; */
+    /* margin-top: 40px */
+    
+  }
+  
+  .form_main hr{
+    width:96%;
+    margin: 10px 0px 20px 0px;
+    color: #1462ea;
+   
+   
+  }
+  
+  label{
+    /* font-size: 1.2rem; */
+    margin:10px 0;
+    
+  }
+  
+  
+  .form-control{
+    height:40px;
+    width: 92%;
+    /* width:290px; */
+    border:2.5px solid rgb(43, 159, 242);
+    margin:15px 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-left:10px;
+    font-size: 1.2rem;
+  }
+  
+  #Message{
+    height:100px;
+    resize: none;
+  }
+  .contact{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .btn{
+    
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #2b9ff2;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+  button{
+    padding: 12px 45px;
+    background-color: rgb(43, 159, 242);
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+  }
+  
+  button:hover{
+    cursor: pointer;
+}
+
+/* Chip setcode contact */
+/* Below line is write to use Google font online */
+@import "http://fonts.googleapis.com/css?family=Ubuntu";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* body {
+  background: url("./img/bg66.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+} */
+
+
+div#main {
+    /* width:850px;
+height:850px; */
+    margin-right: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* contact */
+.chip {
+    position: relative;
+    display: inline-block;
+    padding: 0 25px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 50px;
+    /* border-radius: 7px; */
+    /* background-color: #f1f1f1; */
+    background-origin: padding-box;
+    width: 301px;
+    margin-bottom: 20px;
+    /* border-style:solid;
+    border-color: #2b9ff2; */
+}
+
+
+.chip img {float: left;
+  margin: 4px 0px 0px -67px;
+  height: 52px;
+  width: 50px;
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #2b9ff2;
+
+}
+
+.container1 {
+  float: left;
+  margin: 127px;
+  margin-left: 15%;
+  position: Relavtive;
+  /* LEFT: 32%; */
+  margin-top: 7%;
+  width: fit-content;
+}
+
+
+
+
+/* Border */
+
+.chip {
+    border-radius: 7px;
+    width: 301px;
+    height: 56px;
+    padding: 0 25px;
+    margin-bottom: 20px;
+    border: none;
+    text-align: center;
+}
+
+
+.chip::after {
+    position: absolute;
+    width: 320px;
+    height: 52px;
+    content: "";
+}
+
+.chip::before {
+    left: 30px;
+    top: 0;
+    border-top: 3px solid #2b9ff2;
+}
+
+.chip::after {
+    right: 0;
+    bottom: 0;
+    border-top: 3px solid #2b9ff2;
+    border-right: 3px solid #2b9ff2;
+    border-bottom: 3px solid #2b9ff2;
+}
+
+@media only screen and (max-width: 600px) {
+    .container1 
+    {
+        width: auto;
+    }
+
+    div#form_sample {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+    }
+}

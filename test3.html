@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Members</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f9f9f9;
+      }
+
+      .header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .card {
+        /* background-color: #fff; */
+        border-radius: 10px;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        margin: 20px;
+        /* padding: 20px; */
+        text-align: center;
+        width: 300px;
+        position: relative;
+      }
+
+      .card img {
+        margin-top: 10px;
+        /* border-radius: 50%; */
+        height: 300px;
+        width: 300px;
+        /* height: 80%;
+        width: 90%; */
+        object-fit: fill;
+      }
+
+      .card h3 {
+        font-size: 24px;
+        margin: 20px 0 10px;
+        color: #333;
+      }
+      .card h5 {
+        font-size: 16px;
+        margin: 10px 0 10px;
+        color: #6c6c6c;
+      }
+      div.card {
+        text-align: left;
+      }
+      div.dropdown {
+        align-items: end;
+      }
+
+      .card .dropdown {
+        /* margin-top: 20px; */
+        display: block;
+        cursor: pointer;
+        border: none;
+        background: none;
+        color: #666;
+        font-size: 16px;
+        /* align-self: flex-end; */
+        /* text-decoration: underline; */
+      }
+
+      .card .dropdown:focus {
+        outline: none;
+      }
+
+      .card .dropdown-content {
+        display: none;
+        /* position: absolute;
+        top: calc(100% + 10px); */
+        position: relative;
+        top: 10px;
+        left: 0;
+        /* background-color: #f9f9f9; */
+        min-width: 160px;
+        width: inherit;
+        /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+        z-index: 0;
+        /* padding: 10px; */
+        border-radius: 5px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.5;
+        /* add the following */
+        /* margin-top: 10px; */
+      }
+
+      .card .dropdown-content p {
+        color: #666;
+        margin: 0;
+        padding: 0px 0;
+        cursor: default;
+        font-size: 16px;
+        text-align: justify;
+      }
+      .card .dropdown-content a {
+        text-decoration: none;
+        
+      }
+      .drop{
+        /* visibility: hidden; */
+        border: none;
+        background-color: transparent;
+        position: relative;
+        top: 27px;
+        left: 75px;
+        display: flex;
+      }
+      .card .dropdown:focus{
+        visibility: visible;
+      }
+
+        .card .dropdown:focus+ .dropdown-content {
+            display: block;
+            
+        }
+      
+      
+      .card .dropdown:focus {
+        visibility: visible;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Team Members</h1>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <img
+          src="./Images/Anamika Banerjee2.jpg"
+          alt="Student Photo"
+        />
+        <h3>Anamika Banerjee <a href="mailto:204080002@iitb.ac.in">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a>
+        </h3>
+        <h5>
+          Language, semantic control and Bilingualism in Alzheimer’s Disease
+        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>
+            Year : 2020 - present<br />
+            Before embarking on my journey as a Ph.D student at IIT Bombay, I
+            completed my Master's training in Psychology from Banaras Hindu
+            University and my Undergraduate degree in Psychology(Hons.) from
+            University of Calcutta. <br />
+            <br />
+            My current work focuses on unravelling the semantic control
+            processes involved in lexical access among people with Alzheimer's,
+            also work aims to understand bilingualism as a protective factor in
+            the progression of Alzheimer's Disease. My other research interests
+            include healthy ageing, action control and food cognition.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./Images/Ankit_Mishra.jpg"
+          alt="Student Photo"
+        />
+        <h3>Ankit Mishra <a href="mailto:ankit.psy97@iitb.ac.in">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            Neurocognitive underpinnings of Mathematics Abilities
+        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>
+            Year : 2019 - present<br />
+            Completed graduation in Physics and Chemistry in 2016, followed by Masters in Psychology from University of Allahabad. I started my PhD journey in July 2019 from IIT Bombay. I am using behavioural and neural measures to investigate the cognitive underpinnings of mathematics learning in typically developing children and children with poor math ability.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./Images/Farangis2.jpg"
+          alt="Student Photo"
+        />
+        <h3>Farangis Dehnavi <a href="mailto:farangispsy@gmail.com">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            Executive function, Prospective memory and Emotional regulation among adults with Autism Spectrum Disorder 
+        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>Year : 2018 - present<br />
+            Farangis Dehnavi is a researcher and clinical psychologist who obtained her Bachelor's and Master's degrees in Clinical Psychology from Pune University. Currently, she is pursuing her PhD in the Indian Institute of Technology Bombay. Her research is focused on studying the executive function, prospective memory, and emotional regulation among individuals with Autism Spectrum Disorder. She desires to contribute to the understanding of Autism Spectrum Disorder, particularly in terms of its cognitive and emotional aspects. Her work involves conducting in-depth assessments of individuals with Autism Spectrum Disorder to understand their cognitive and emotional functioning.
+
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./Images/juilee.jpg"
+          alt="Juilee Lele"
+        />
+        <h3>Juilee Lele <a href="mailto:204083011@iitb.ac.in">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            Eyewitness Testimony 
+        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>Year : 2018 - present<br />
+            After completing graduation (B.A.) in Psychology from the University of Mumbai, I pursued a post-graduation degree (M.A.) in Counselling Psychology from Smt.  Nathibai Damodar Thackersey Women's University (S.N.D.T.), Mumbai. Before entering the field of research, I enjoyed working as initially a school counsellor and later as an assistant professor for a brief period.  
+            Currently, I am pursuing Ph.D. in Psychology at the psychophysiology laboratory, IIT Bombay. My work revolves around studying various cognitive factors associated with eyewitness testimony. Presently, I am exploring the role of fake news in disseminating misinformation that can contaminate eyewitness memory.
+
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./Images/Karamjeet_Kaur.jpeg.jpg"
+          alt="Karamjeet Kaur Sarna"
+        />
+        <h3>Karamjeet Kaur Sarna <a href="mailto:22d2023@iitb.ac.in">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            Assessment and Prediction of Future Events in Younger and Older drivers by the means of Assistive Information 
+        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>Year : 2023 - present<br />
+            Karamjeet Kaur Sarna is currently pursuing a joint PhD program at the IITB Monash Research Academy. After obtaining her undergraduate and master’s degree at the Institute of Neuropsychology and Neuroscience, Amity University, she worked as a Research Assistant on a DST-sponsored project  under the Cognitive Science Research Initiative, which helped her gain a fine perspective of approaching neuroscience from an interdisciplinary standpoint. Having groomed and nurtured her scientific temperament, she is focused on understanding the higher-order cognitive processes in a driving environment with the aim of improving the driving experience by integrating advanced assistive systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./Images/Maitreyi_Redkar.jpg"
+          alt="Maitreyi Redkar Profile"
+        />
+        <h3>Maitreyi Redkar <a href="mailto:maitreyi.redkar@gmail.com">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            Cognitive Markers for predicting Distubed Emotional states in Polycystic Ovary Syndrome (PCOS): An survey-based and experimental empirical evaluation 
+
+        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>Year : 2020 - present<br />
+            After her Masters, she practised in various capacities in the field of psychology for 2 years - as a Clinical Psychologist, a Research Associate and Psychology teacher. Desirous of contributing to the field representation within the governance system, she completed the M.Phil. in Planning and Development (IIT Bombay). Currently, she is pursuing her PhD (IIT Bombay) in the area of  psycho-endocrinology and health neuropsychology.        
+            Her current doctoral research on the psychological impact of Polycystic Ovary Syndrome (PCOS) is multidisciplinary, as it seeks to evaluate this condition's emotional and cognitive impacts. She conducts a multifaceted study through surveys and experiments to understand the different implications.
+            Other than her thesis, she is a trained Odissi dancer and a licensed scuba diver. 
+
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./Images/Nanditha.jpg"
+          alt="Student Photo"
+        />
+        <h3>Nanditha <a href="mailto:nandithak@iitb.ac.in ">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            Comorbid Developmental Dyslexia and ADHD        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>
+            Year : 2017 - present<br />
+            
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./Images/shaminiwarda.jpg"
+          alt="Shamini Warda"
+        />
+        <h3>Shamini Warda <a href="mailto:shaminiwarda@iitb.ac.in">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            Predictive Processes in Time Perception
+        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>
+            Year : 2018 - present<br />
+            I hold a Masters in Cognitive Science from the Centre of Behavioural and Cognitive Sciences, University of Allahabad. Prior to joining Psychophysiology Lab, I worked at IIT Kanpur for about 2 years and contributed to a DST-sponsored project looking at hemispheric asymmetries of attentional processes and symmetry judgment. For my PhD thesis, I am currently investigating how various predictive processes contribute to time perception using converging techniques from psychophysics, eye tracking and EEG. <br>
+            An introvert by nature and an aspiring woman doing Science, I also practice kalaripayattu, a martial art form based on kerala. My passion for various movement arts has ultimately led me to have a growing interest in the key dynamics of human motor control. 
+
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./Images/Vinay Krishna.jpg"
+          alt="Vinay Krishna"
+        />
+        <h3>Vinay Krishna <a href="mailto:vinayiitb@iitb.ac.in">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            Cognitive processes underlying fairness judgement.  
+        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>Year : 2019 - present<br />
+            I have completed my Bachelors in Mathematics followed by Masters in Cognitive Science, from University of Allahabad. I am interested in understanding how psychological factors affect economic decision making. In my research area I am trying to understand how cognitive mechanisms regulate fairness judgments  in economic transactions. 
+            In my spare time I like reading books (especially works of Chekhov), watching films and listening to music. 
+
+          </p>
+        </div>
+    </div>
+    <div class="card">
+        <img
+          src="./Images/vanita sharma jan 23.jpg"
+          alt="Vinay Krishna"
+        />
+        <h3>Vanita Sharma <a href="mailto:184083002@iitb.ac.in ">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            Emotion Recognition in children with Autism.        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>Year : 2019 - present<br />
+            Prior to pursuing her PhD at Indian Institute of Technology-Bombay(IIT-B), Vanita has worked as a psychologist(graduation & post-graduation in Psychology) in a school and ngo set-up working with children having diverse backgrounds and concerns. Amongst them, were some children with autism spectrum disorder who have contributed towards her perspective on the needs and concerns of children with autism. At present she is studying the behavioral and neural measures involved in the emotion recognition in children with and without autism spectrum disorder.
+
+          </p>
+        </div>
+    </div>
+    <div class="card">
+        <img
+          src="./Images/Yengisetty_Eswar_Naveen.jpg"
+          alt="Vinay Krishna"
+        />
+        <h3>Yengisetty <br> Eswar Naveen <a href="mailto:yenaveenpsy@gmail.com">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            Emotion Contagion: Through the lens of mirroring Mechanism
+        </h5>
+        <button class="dropdown" tabindex="0">
+          Details
+          <i
+            class="fa fa-angle-double-down"
+            style="font-size: 28px; color: rgb(12, 160, 214); padding-left: 10px;" 
+          ></i>
+        </button>
+        <div class="dropdown-content">
+          <p>Year : 2021 - present<br />
+            I have done my Undergraduation in BSc Psychology from the Central University of Karnataka and in post-graduation, I did my MSc. in Cognitive science from CBCS, Allahabad. For my PhD, I am studying emotion contagion through the lens of mirroring mechanisms. Simply put I want to understand what might be the underlying mechanisms of how humans ‘understand’ each other’s emotions. Other than my thesis and being a cinephile I also find time perception, attention and philosophy of mind very interesting.
+
+          </p>
+        </div>
+    </div>
+    <div class="card">
+        <img
+          src="./Images/Ayyub.jpg"
+          alt="Vinay Krishna"
+        />
+        <h3>Ayyub Khan <a href="mailto:ayyubkhan992@gmail.com">
+            <i class="fa fa-envelope ml-auto mr-auto" style="font-size:30px;color:rgb(22, 177, 238);" 
+              onmouseover="this.style.color='rgb(73,175,65)';" onmouseout="this.style.color='rgb(22, 177, 238)';">
+            </i></a></h3>
+        <h5>
+            LAB ASSISTANT
+        </h5>
+    </div>
+    </div>
+
+  </body>
+</html>

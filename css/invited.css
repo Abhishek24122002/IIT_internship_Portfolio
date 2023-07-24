@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.allyears{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+    padding: 20px;
+    font-family:'Poppins', sans-serif;
+}
+
+.year{
+    position: relative;
+    display: inline-block;
+    width: 23%;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 50px;
+    border-top: 1mm solid skyblue;
+}
+
+.year p{
+    display: none;
+
+}
+
+.year h1{
+    text-align: center;
+    margin-top: 75px;
+}
+.year:hover p{
+    display:contents;
+    z-index: 3;
+}
+.year:in-range{
+    display: block;
+    position:relative;
+    width: 85%;
+    margin: 150px auto;
+    z-index: 2;
+    border: 1mm solid red;
+    border-radius:25% 10%;
+}
+.year:hover{
+    border-radius: 10% 0% 0% 10%;
+    background: rgba(128, 128, 128, 0.16);
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.year:hover h1{
+    margin-bottom: 200px;
+    margin-top: 75px;
+    animation: title 1.5s ease 0s 1;
+    transform: scale(2.5);
+}
+*::-webkit-scrollbar{
+    width: 10px;
+}
+*::-webkit-scrollbar-thumb{
+    background-color:skyblue;
+    border-radius: 10px;
+}
+*::-webkit-scrollbar-track{
+    background-color:gray;
+    border-radius: 10px;
+}
+
+@keyframes title{
+    0%{
+        transform:scale(1)
+    }
+    100%{
+        transform: scale(2.5);
+    }
+}

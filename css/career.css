@@ -1,0 +1,269 @@
+* {
+    font-family: "Chalet",Arial,Helvetica,serif!important;
+}
+
+.modulewrap h2{
+  font-size:24px;
+}
+.legendx-content{
+  display:flex;
+  flex-direction:row;
+  height:100px;
+}
+
+.legendx-content *{
+width:100%;
+text-align:center;
+}
+.module{
+  margin-left: 8%;
+
+}
+
+.legendy{
+  display:flex;
+  flex-direction:column;
+  margin-top:100px;
+  padding-right:20px;
+}
+
+.legendy *{
+  height:50%;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+}
+
+.modulewrap {
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.flip-box-wrapper{
+  cursor:pointer;
+}
+
+.flip-box-front *, .flip-box-back * {
+    display: block;
+}
+
+.extrablock h2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  font-size:96%;
+  margin:0;
+}
+
+extrablock a{
+  color:#fff;
+}
+
+a:hover{
+  color: #000;
+}
+
+.flip-box.one .extrablock {
+    display: flex;
+    flex-direction: column;
+}
+
+.extrablock_inner {
+    /* display: flex; */
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-box.one .extrablock .half{
+  background:#ffba00;
+  height:100%;
+  width:100%;
+}
+
+.flip-box.one .extrablock .half.top{
+  margin-bottom:10px;
+}
+
+.flip-box.one .extrablock {
+    position: absolute;
+    left: -310px;
+    top: 0;
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.flip-box.two .extrablock{
+    position: absolute;
+    right: -310px;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      padding-left: 10px;
+}
+
+.flip-box.two .extrablock_inner{
+      background-color: #00afef;
+}
+
+.flip-box.three .extrablock{
+    position: absolute;
+    left: -310px;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      padding-right: 10px;
+}
+
+.flip-box.three .extrablock_inner{
+    background-color: #03d386;
+}
+
+
+.flip-box.four .extrablock{
+    position: absolute;
+    right: -310px;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      padding-left: 10px;
+}
+
+.flip-box.four .extrablock_inner{
+    background-color: #5e31e8;
+}
+
+.flip-box-wrapper{
+  max-width:610px;
+  margin: 0 auto;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.flip-box {
+  background-color: transparent;
+  width:300px;
+  height: 300px;
+  perspective: 1000px;
+  display:flex;
+  justify-content:center;
+}
+
+.flip-box.half{
+  height:150px;
+}
+
+.one .flip-box-front,.one .flip-box-back{
+    background-color: #97ACCB;
+}
+
+.two .flip-box-front,.two .flip-box-back{
+    background-color: #00afef;
+}
+
+.three .flip-box-front,.three .flip-box-back{
+    background-color: #6ED2F9;
+}
+
+.four .flip-box-front,.four .flip-box-back{
+    background-color: #bcd3f3;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display:flex;
+  flex-direction:column;
+  justify-conten:center;
+  align-items:space-between;
+  
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.flip-box-back {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.flip-box.three {
+    margin-right: 10px;
+}
+.flip-box.one {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.apply{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+@font-face{font-family:'Chalet';src:url(https://borkent.com/citizenm/chalet-newyorksixty.eot);src:url(https://borkent.com/citizenm/chalet-newyorksixty.eot?#iefix) format("embedded-opentype"),url(https://borkent.com/citizenm/chalet-newyorksixty.woff) format("woff"),url(https://borkent.com/citizenm/chalet-newyorksixty.ttf) format("truetype"),url(https://borkent.com/citizenm/chalet-newyorksixty.ttf#ChaletNewYorkNineteenSixty) format("svg");font-weight:normal;font-style:normal;}
+
+@font-face {
+    font-family: 'chaletlondon';
+    src: url('https://borkent.com/citizenm/chaletlondonnineteensixty-webfont.woff2') format('woff2'),
+         url('https://borkent.com/citizenm/chaletlondonnineteensixty-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.modulefooter, .moduleheader{
+  width:900px;
+  margin:50px auto;
+  font-weight:normal;
+  color:#5a5a5a;
+  font-size:90%;
+}
+.modulefooter strong,.moduleheader strong{
+ color:#000; 
+}
